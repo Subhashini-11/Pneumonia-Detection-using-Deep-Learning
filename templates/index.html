@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block title %}Pneumonia Detection - Home{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow">
+            <div class="card-body">
+                <h1 class="text-center mb-4">Pneumonia Detection System</h1>
+                <hr>
+                
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="p-4">
+                            <h2>What is Pneumonia?</h2>
+                            <p>Pneumonia is an infection that inflames the air sacs in one or both lungs. 
+                            The air sacs may fill with fluid or pus, causing cough with phlegm or pus, 
+                            fever, chills, and difficulty breathing.</p>
+                            
+                            <p>Early diagnosis of pneumonia is crucial for effective treatment and 
+                            preventing complications, especially in children and the elderly.</p>
+                            
+                            <div class="d-grid gap-2 mt-4">
+                                <a href="{{ url_for('prevention') }}" class="btn btn-info">
+                                    <i class="fas fa-shield-virus me-2"></i>Prevention Tips
+                                </a>
+                                <a href="{{ url_for('measures') }}" class="btn btn-secondary">
+                                    <i class="fas fa-heartbeat me-2"></i>Health Measures
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="upload-container p-4 bg-light rounded">
+                            <h2 class="mb-3">Analyze X-ray Image</h2>
+                            <p>Upload a chest X-ray image to detect signs of pneumonia.</p>
+                            
+                            <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data" class="mb-3">
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Choose an X-ray image</label>
+                                    <input class="form-control" type="file" id="formFile" name="file" accept="image/*" required>
+                                    <div class="form-text">Supported formats: JPG, JPEG, PNG</div>
+                                </div>
+                                
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-upload me-2"></i>Upload & Analyze
+                                    </button>
+                                </div>
+                            </form>
+                            
+                            <div class="alert alert-warning">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                <strong>Disclaimer:</strong> This tool is for educational purposes only. Always consult with a healthcare professional for medical advice.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <h3>How It Works</h3>
+                        <div class="row text-center mt-3">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <i class="fas fa-upload fa-3x text-primary mb-3"></i>
+                                        <h5 class="card-title">Step 1: Upload</h5>
+                                        <p class="card-text">Upload a chest X-ray image from your device.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                                        <h5 class="card-title">Step 2: AI Analysis</h5>
+                                        <p class="card-text">Our AI model analyzes the X-ray using deep learning.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <i class="fas fa-clipboard-check fa-3x text-primary mb-3"></i>
+                                        <h5 class="card-title">Step 3: Results</h5>
+                                        <p class="card-text">View the analysis results with pneumonia probability.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

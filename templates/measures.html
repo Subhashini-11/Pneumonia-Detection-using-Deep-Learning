@@ -1,0 +1,243 @@
+{% extends "layout.html" %}
+
+{% block title %}Pneumonia Detection - Health Measures{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow">
+            <div class="card-body">
+                <h1 class="text-center mb-4">Pneumonia Health Measures</h1>
+                <hr>
+                
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="lead">Understanding the symptoms, diagnosis, and treatment options for pneumonia is essential for managing this condition effectively.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-stethoscope fa-6x text-danger"></i>
+                    </div>
+                </div>
+                
+                <!-- Symptoms Section -->
+                <div class="mt-5">
+                    <h2 class="border-bottom pb-2"><i class="fas fa-lungs-virus text-danger me-2"></i>Recognizing Pneumonia Symptoms</h2>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="card mb-3 border-danger">
+                                <div class="card-header bg-danger text-white">
+                                    <h4 class="mb-0">Common Symptoms</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-thermometer-three-quarters text-danger me-3"></i>
+                                            <span>Fever, sometimes with shaking chills</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-head-side-cough text-danger me-3"></i>
+                                            <span>Persistent cough with phlegm or pus</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-lungs text-danger me-3"></i>
+                                            <span>Shortness of breath, especially during physical activity</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-heartbeat text-danger me-3"></i>
+                                            <span>Rapid, shallow breathing and increased heart rate</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-tired text-danger me-3"></i>
+                                            <span>Fatigue and weakness</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card mb-3 border-warning">
+                                <div class="card-header bg-warning text-dark">
+                                    <h4 class="mb-0">When to Seek Medical Attention</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p>See a doctor immediately if you or someone you're caring for has:</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-exclamation-triangle text-warning me-3"></i>
+                                            <span>Difficulty breathing or rapid breathing</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-exclamation-triangle text-warning me-3"></i>
+                                            <span>Chest pain that worsens when coughing or breathing</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-exclamation-triangle text-warning me-3"></i>
+                                            <span>High fever (above 102°F or 38.9°C)</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-exclamation-triangle text-warning me-3"></i>
+                                            <span>Confusion or changes in mental awareness (in older adults)</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-exclamation-triangle text-warning me-3"></i>
+                                            <span>Bluish lips or nail beds (cyanosis) due to lack of oxygen</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Diagnosis Section -->
+                <div class="mt-5">
+                    <h2 class="border-bottom pb-2"><i class="fas fa-microscope text-primary me-2"></i>Diagnosis Methods</h2>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3 text-center">
+                                            <i class="fas fa-x-ray fa-4x text-primary mb-3"></i>
+                                            <h5>Chest X-ray</h5>
+                                            <p>The primary imaging test for diagnosing pneumonia.</p>
+                                        </div>
+                                        <div class="col-md-3 text-center">
+                                            <i class="fas fa-laptop-medical fa-4x text-primary mb-3"></i>
+                                            <h5>CT Scan</h5>
+                                            <p>Provides more detailed images when X-rays are inconclusive.</p>
+                                        </div>
+                                        <div class="col-md-3 text-center">
+                                            <i class="fas fa-vial fa-4x text-primary mb-3"></i>
+                                            <h5>Blood Tests</h5>
+                                            <p>To check for infection and identify the pathogen.</p>
+                                        </div>
+                                        <div class="col-md-3 text-center">
+                                            <i class="fas fa-procedures fa-4x text-primary mb-3"></i>
+                                            <h5>Sputum Test</h5>
+                                            <p>Analysis of mucus from lungs to identify bacteria.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Treatment Section -->
+                <div class="mt-5">
+                    <h2 class="border-bottom pb-2"><i class="fas fa-pills text-success me-2"></i>Treatment Approaches</h2>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="card mb-3 h-100">
+                                <div class="card-header bg-success text-white">
+                                    <h4 class="mb-0">Medical Treatment</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <strong><i class="fas fa-capsules me-2 text-success"></i>Antibiotics:</strong> 
+                                            For bacterial pneumonia, prescribed according to the specific bacteria.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong><i class="fas fa-virus-slash me-2 text-success"></i>Antiviral Medications:</strong> 
+                                            For viral pneumonia caused by influenza.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong><i class="fas fa-temperature-low me-2 text-success"></i>Fever Reducers:</strong> 
+                                            Over-the-counter medications like acetaminophen or ibuprofen.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong><i class="fas fa-head-side-cough me-2 text-success"></i>Cough Medicine:</strong> 
+                                            To help manage a persistent cough if needed.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card mb-3 h-100">
+                                <div class="card-header bg-info text-white">
+                                    <h4 class="mb-0">Home Care</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <strong><i class="fas fa-bed me-2 text-info"></i>Rest:</strong> 
+                                            Get plenty of rest to help your body fight the infection.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong><i class="fas fa-tint me-2 text-info"></i>Stay Hydrated:</strong> 
+                                            Drink plenty of fluids to help loosen mucus in your lungs.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong><i class="fas fa-temperature-high me-2 text-info"></i>Control Fever:</strong> 
+                                            Take medications as prescribed for fever management.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong><i class="fas fa-wind me-2 text-info"></i>Use a Humidifier:</strong> 
+                                            Adding moisture to the air can help ease breathing.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong><i class="fas fa-smoking-ban me-2 text-info"></i>Avoid Irritants:</strong> 
+                                            Stay away from smoke, dust, and other respiratory irritants.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recovery Section -->
+                <div class="mt-5">
+                    <h2 class="border-bottom pb-2"><i class="fas fa-heart text-danger me-2"></i>Recovery and Follow-up</h2>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h5><i class="fas fa-clock text-muted me-2"></i>Recovery Timeline</h5>
+                                            <p>Recovery from pneumonia varies depending on severity:</p>
+                                            <ul>
+                                                <li><strong>Mild cases:</strong> 1-2 weeks</li>
+                                                <li><strong>Moderate cases:</strong> 4-6 weeks</li>
+                                                <li><strong>Severe cases:</strong> Several months</li>
+                                            </ul>
+                                            <p>Feeling tired during recovery is normal, even after other symptoms resolve.</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h5><i class="fas fa-user-md text-muted me-2"></i>Follow-up Care</h5>
+                                            <ul>
+                                                <li>Complete the full course of prescribed antibiotics even if you feel better</li>
+                                                <li>Attend all follow-up appointments with your healthcare provider</li>
+                                                <li>Get a follow-up chest X-ray if recommended</li>
+                                                <li>Consider vaccination against pneumonia after recovery, if appropriate</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-warning mt-4">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <i class="fas fa-exclamation-triangle fa-2x"></i>
+                        </div>
+                        <div class="col">
+                            <h5 class="alert-heading">Medical Disclaimer</h5>
+                            <p class="mb-0">The information provided on this page is for educational purposes only and is not intended as medical advice. Always consult with a qualified healthcare provider for diagnosis and treatment of pneumonia or any other medical condition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

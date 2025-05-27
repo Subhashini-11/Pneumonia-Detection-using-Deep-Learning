@@ -1,0 +1,144 @@
+{% extends "layout.html" %}
+
+{% block title %}Pneumonia Detection - About{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow">
+            <div class="card-body">
+                <h1 class="text-center mb-4">About Our Pneumonia Detection System</h1>
+                <hr>
+                
+                <div class="row mb-5">
+                    <div class="col-md-8">
+                        <h2>Our Mission</h2>
+                        <p class="lead">We aim to provide accessible AI-powered tools that can assist in the early detection of pneumonia, potentially improving healthcare outcomes worldwide.</p>
+                        <p>Pneumonia affects millions of people globally each year, with the highest burden in developing countries and among children and the elderly. Early detection and diagnosis are crucial for effective treatment and reducing mortality rates.</p>
+                    </div>
+                    <div class="col-md-4 text-center d-flex align-items-center justify-content-center">
+                        <i class="fas fa-laptop-medical fa-6x text-primary"></i>
+                    </div>
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <h2 class="mb-4">The Technology Behind Our System</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row text-center">
+                                    <div class="col-md-4 mb-3 mb-md-0">
+                                        <i class="fas fa-brain fa-3x text-info mb-3"></i>
+                                        <h4>Deep Learning</h4>
+                                        <p>Our system uses deep convolutional neural networks (CNN) trained on thousands of chest X-ray images to detect patterns associated with pneumonia.</p>
+                                    </div>
+                                    <div class="col-md-4 mb-3 mb-md-0">
+                                        <i class="fas fa-project-diagram fa-3x text-info mb-3"></i>
+                                        <h4>VGG16 Architecture</h4>
+                                        <p>We've implemented a modified VGG16 architecture, a proven deep learning model for image classification, fine-tuned specifically for pneumonia detection.</p>
+                                    </div>
+                                    <div class="col-md-4 mb-3 mb-md-0">
+                                        <i class="fas fa-chart-line fa-3x text-info mb-3"></i>
+                                        <h4>High Accuracy</h4>
+                                        <p>Our model achieves high accuracy in distinguishing between normal and pneumonia-affected lung X-rays in controlled testing environments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col-md-6 order-md-2">
+                        <h2>Educational Purpose</h2>
+                        <p>This tool is designed for educational and demonstrative purposes to showcase the potential of AI in healthcare. It should not replace professional medical diagnosis.</p>
+                        <p>The system can serve as:</p>
+                        <ul>
+                            <li>A learning tool for medical students</li>
+                            <li>A demonstration of AI capabilities in medical imaging</li>
+                            <li>A research platform for further development</li>
+                        </ul>
+                        <p>Always consult with qualified healthcare professionals for proper diagnosis and treatment of medical conditions.</p>
+                    </div>
+                    <div class="col-md-6 text-center d-flex align-items-center justify-content-center order-md-1">
+                        <i class="fas fa-graduation-cap fa-6x text-success"></i>
+                    </div>
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <h2 class="mb-4">How We Trained Our Model</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3"><i class="fas fa-database text-primary me-2"></i>Dataset</h5>
+                                        <p>Our model was trained on the Chest X-Ray dataset containing thousands of labeled pediatric chest X-ray images categorized as normal and pneumonia. This public dataset is widely used in medical imaging research.</p>
+                                        
+                                        <h5 class="mb-3 mt-4"><i class="fas fa-cogs text-primary me-2"></i>Training Process</h5>
+                                        <p>We used transfer learning with a pre-trained VGG16 model, fine-tuning it on our specific pneumonia classification task. The model was trained with appropriate class weighting to handle data imbalance.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3"><i class="fas fa-chart-pie text-primary me-2"></i>Validation Strategy</h5>
+                                        <p>The dataset was split into training, validation, and test sets to ensure the model generalizes well to new, unseen data. We monitored key metrics including accuracy, precision, recall, and F1-score.</p>
+                                        
+                                        <h5 class="mb-3 mt-4"><i class="fas fa-shield-alt text-primary me-2"></i>Limitations</h5>
+                                        <p>While our model performs well on test data, it has limitations, including potential biases from the training dataset. It should be used as a supportive tool, not as a standalone diagnostic system.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <h2 class="mb-4">Our Team</h2>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-user-md fa-4x text-primary mb-3"></i>
+                                        <h4>Medical Advisors</h4>
+                                        <p>Healthcare professionals who provided guidance on pneumonia diagnosis and interpretation of chest X-rays.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-laptop-code fa-4x text-primary mb-3"></i>
+                                        <h4>AI Developers</h4>
+                                        <p>Machine learning engineers who designed, trained, and optimized the deep learning model.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-users fa-4x text-primary mb-3"></i>
+                                        <h4>Web Developers</h4>
+                                        <p>Software engineers who built this web application to make the AI model accessible and user-friendly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-info mt-4">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <i class="fas fa-envelope fa-2x"></i>
+                        </div>
+                        <div class="col">
+                            <h5 class="alert-heading">Contact Us</h5>
+                            <p class="mb-0">Have questions, suggestions, or feedback about our Pneumonia Detection System? We'd love to hear from you! Reach out to us at <strong>info@pneumonia-detection.org</strong> or call us at <strong>+1 (555) 123-4567</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
